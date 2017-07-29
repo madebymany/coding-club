@@ -1,0 +1,33 @@
+Navigate around the directories under `cat_world` using the commands you've learnt. Open the cat files to learn exciting facts about them!
+
+1. Find Tootsie the Happy Cat. Hint: Tootsie likes the outdoors and eating fish
+    * what is Tootsie's secret wish?
+    * did you like Tootsie's joke? (you might have to Google it, but that always makes things funnier!)
+    * what other files are there in the directory as Tootsie? 
+
+2. Find Ronnie the Fat Cat. Hint: Ronnie likes a quite, comfortable life, with lots of snacks.
+    * what is Ronnie's favourite food?
+    * did you like Ronnie's joke?
+    * go up 2 levels from where you found Ronnie using one of the shortcuts arguments to `cd`. What's the full path of the directory you are in?
+
+3. Find Tom the Space Cat. Hint: Tom enjoys adventure and meeting new people.
+    * what is Tom's favourite passtime?
+    * did you like Tom's joke?
+    * Tom the space cat likes meeting new people. Make another file in the same directory as him called margery_the_space_cat.txt
+    * go up one level from where you found Tom the space cat. What other directories are there?
+
+=====
+If you have extra time...
+
+4. Try to find Mildred the Millionaire Cat. Hint: Mildred is very fancy and doesn't care to be bothered by the likes of you!
+    * Hint: If you have trouble getting into see Mildred, try googling 'sudo'. What does sudo do?
+    * What car does Mildred drive?
+    * did you enjoy Mildred's joke?
+
+5. Mildred should get out and see the world a bit. Tootsie might cheer her up. Try moving her to the same place as Tootsie (Hint: you will need to find a new command to do this; try Googling).
+
+
+
+
+
+
