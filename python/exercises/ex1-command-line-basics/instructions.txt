@@ -20,7 +20,7 @@ Navigate around the directories under `cat_world` using the commands you've lear
 If you have extra time...
 
 4. Try to find Mildred the Millionaire Cat. Hint: Mildred is very fancy and doesn't care to be bothered by the likes of you!
-    * Hint: If you have trouble getting into see Mildred, try googling 'sudo'. What does sudo do?
+    * Hint: If you have trouble finding Mildred, try googling 'hidden files'. Is there a flag you can use to see hidden files?
     * What car does Mildred drive?
     * did you enjoy Mildred's joke?
 
