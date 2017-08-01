@@ -10,6 +10,10 @@ Navigate around the directories under `cat_world` using the commands you've lear
     * did you like Ronnie's joke?
     * go up 2 levels from where you found Ronnie using one of the shortcuts arguments to `cd`. What's the full path of the directory you are in?
 
+3. Winnie the Wandering Cat has arrived in Cat world. Winnie likes exploring exciting new places!
+    * find a place you think Winnie would like a create a new directory called winnie-s-cat-basket
+    * create a file inside winnie-s-cat-basket called winnie-the-wandering-cat. Put some interesting facts about Winnie in the file.
+
 3. Find Tom the Space Cat. Hint: Tom enjoys adventure and meeting new people.
     * what is Tom's favourite passtime?
     * did you like Tom's joke?
@@ -25,9 +29,3 @@ If you have extra time...
     * did you enjoy Mildred's joke?
 
 5. Mildred should get out and see the world a bit. Tootsie might cheer her up. Try moving her to the same place as Tootsie (Hint: you will need to find a new command to do this; try Googling).
-
-
-
-
-
-
