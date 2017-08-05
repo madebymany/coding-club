@@ -1,0 +1,10 @@
+1. create a file called hello.py in the ex2-hello-world directory (the same directory as this instructions file)
+2. type this into the file:
+
+# This is my first program. Hooray!!
+print "Hello, World!"
+
+3. save the file
+4. in the terminal window, make sure you are in the ex2-hello-world directory
+5. run this command:
+    python hello.py
