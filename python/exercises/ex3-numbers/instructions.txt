@@ -1,0 +1,6 @@
+1. In a new python file (make sure you use the right extension!). Type the following:
+print "If I have 5 kittens and they make friends with 7 tortoises, the number of happy animals will be:", 2 + 2
+print "If 2 of the tortoises go off to explore the world, the number of tortoises left will be:", 7 - 2
+print "If each kitten finds a matching bunny, in total there will be", 5 * 2, "kitten and bunnies"
+print "if half of the kittens are selected for a kitten reality TV program, there will be", 5/2, "kittens left"
+2. Save and run the file. Have a look at the outputs - are they what you expected?
