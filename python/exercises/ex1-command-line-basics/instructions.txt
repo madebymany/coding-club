@@ -3,10 +3,10 @@ Navigate around the directories under `cat_world` using the commands you've lear
 1. Find Tootsie the Happy Cat. Hint: Tootsie likes the outdoors and eating fish
     a what is Tootsie's secret wish?
     b did you like Tootsie's joke? (you might have to Google it, but that always makes things funnier!)
-    c what other files are there in the directory as Tootsie? 
+    c what other files are there in the same directory as Tootsie? 
     d what is the full path for Tootsie's location?
 
-2. Find Ronnie the Fat Cat. Hint: Ronnie likes a quite, comfortable life, with lots of snacks.
+2. Find Ronnie the Fat Cat. Hint: Ronnie likes a quiet, comfortable life, with lots of snacks.
     a what is Ronnie's favourite food?
     b did you like Ronnie's joke?
     c go up 2 levels from where you found Ronnie using one of the shortcuts arguments to `cd`. What's the full path of the directory you are in?
