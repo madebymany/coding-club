@@ -1,0 +1,10 @@
+1. We've already met the + operator. Just as a reminder, write and run a python script to print out the result of 2 + 2
+2. Add another print statement to your python file to print out "2" + "2" (strings instead of integers). Have a guess at what will happen before you run it. Were you right?
+3. Write another line to print out "Hello World!" using the strings "Hello" "World!" and the + operator. Think about how will get the space in between the words to appear.
+4. What do you think will happen if you add "hello" to 2? Try it.
+5. What do you think will happen if you delete one string from another string? Try it out.
+
+====
+If you have extra time...
+6. Try adding together True and False. What do you think will happen? Try it out!
+7. Now try adding True and True. Can you work out what's going on? Try adding True and False to some integers, numbers and strings. See if you can predict what the results will be.
