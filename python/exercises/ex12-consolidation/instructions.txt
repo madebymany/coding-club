@@ -1,0 +1,18 @@
+You are zookeeper with a love of Python (and pythons!) - write a python script to help you manage your zoo:
+
+1. Give your zoo a name - store it in lower case. Print out a welcome to your zoo using your name.
+
+2. Print out some terms and conditions for your zoo using a multiline string. Include opening and closing hours and details about whether visitors may cuddle animals. In your terms and conditions, put your zoo name in upper case.
+
+3. You need some animals in your zoo! Pick three animals and make variables showing how many of each type those animals your have. Print out a message saying how many animals in total you have.
+
+4. Your zoo is so nice that some new animals have moved in! Overwrite your animal count variables by adding 2 to each of them. Print out a message with your new total.
+
+5. You have your first visitor! Ask them their name and welcome them to your zoo!
+
+6. Your visitor needs to pay! Set an entrance price and ask your visitor for their money. If they give you enough, calculate their change and print that out. If not, tell them to get lost!
+
+7. Your visitor wants some information about the park. Ask them what their favourite animal is. Tell them how many of those animals you have in your park. If they pick an animal you don't have, tell them their preference is incorrect.
+
+8. Your zoo is thriving! Work out how much money you will make if you get 250 visitors today. A raccoon costs 28p from super-cheap-raccoon-farm-inc - how many racoons could you buy with your profits?
+

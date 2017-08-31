@@ -1,0 +1,17 @@
+1. Try running this in a Python file:
+print "What is your name?"
+your_name = user_input()
+print "hello", your_name.title()
+
+2. Instead of using print, we can pass the prompt into raw_input. Try this:
+fav_colour = raw_input("What is your favourite colour? ")
+print "You like " + fav_colour
+
+3. Use raw_input to ask the users age. Print out how old they will be in 5 years' time. (hint: you will need one of the functions we learnt in the previous exercise)
+
+=====
+If you have extra time
+
+4. Use raw_input to ask for an email address twice. If the 2 addresses provided are the same, print one message, if not, print another.
+
+

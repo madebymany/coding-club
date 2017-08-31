@@ -1,0 +1,19 @@
+1. Try printing out the results of these (or you can use Python interactive mode if you prefer):
+round(1.4)
+round(12)
+round("22")
+
+3. Try these:
+int("2") + int("5")
+str(2) + str(17)
+len("hello")
+len("goodbye")
+
+3. We can do some cool stuff with strings. Try this:
+my_string = "cats have nice ears"
+print my_string.upper()
+print my_string.capitalize()
+print my_string.title()
+
+my_string = "HELLO"
+print my_string.lower()
