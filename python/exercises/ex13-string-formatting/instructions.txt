@@ -1,0 +1,25 @@
+1. Try this:
+print "Hello, {}, how are you today?".format("Ronnie-cat")
+
+2. Format make things a bit nice when dealing with numbers. Try this:
+print '''I have {} wombats and {} anteaters.
+In total, that's {} animals'''.format(3, 7, 3 + 7)
+
+3. What if we want to use an argument more than once, or out of order? Try this:
+print "I have a nice cat called {2}. My cat called {2} has {0} paws. My cat called {2} has {1} fur. {2} is {3} years old".format(4, "grey", "Ronnie", "14.5")
+
+4. That has the potential to get quite confusing! Try this:
+print "There are {total_elephants} elephants. The best elephant is called {best_elephant_name}; {best_elephant_name} is {best_elephant_age} years old. Of all the {total_elephants} elephants, she has the most {best_elephant_quality}".format(best_elephant_name="Margery", best_elephant_age=12, best_elephant_quality="kindness", total_elephants=20)
+
+5. What if we want to make the things we pass into string format look at bit different? Try this:
+print '''My cat {:<20} does lots of padding around
+I would like my name {my_name:*^15} up in stars
+{another_name} is very swanky and needs lots of $s before his name {another_name:$>24}
+{long_name} has a very long name and we don't need to see the whole thing every time, so we can do {long_name:.6}
+{my_float} can be formatted with the number of decimal places we want like this {my_float:.3f}
+we can pad it with some zeros too if we want, like this: {my_float:07.3f}'''.format("Ronnie", my_name="Kat", another_name="My Swanky", long_name="HRH Queen Elizabeth Alexandra Mary", my_float=3.141592653589793)
+
+====
+If you have extra time
+5. Write a script that will ask the user for their favourite type of weather, their favourite mode of transport and their favourite type of food. Store their answers in variables and use string fomatting with a multi line string to print out a suggested holiday itinary for them.
+

@@ -1,0 +1,28 @@
+1. Try this. Remember the rules about indentation (your text editor should already be set up to do things right):
+while True:
+    print "This is just going to keep printing over and over and over until I press ctrl-c"
+    print "I will need to comment this out before I run other code in this file"
+    print "This sort of thing is hardly ever a good idea - I probably shouldn't do it very often!"
+
+print "This line won't ever get to print because we'll have to kill the script before it gets here"
+
+
+2. Try this (you will need to delete or comment out the code from q1 before you run this):
+
+number_of_green_bottles = 20
+lyrics = '''
+{number} green bottles hanging on the wall
+{number} green bottles hanging on the wall
+And if one green bottle should accidentall fall
+They'll be {number} green bottles hanging on the wall
+'''
+
+while number_of_green_bottles >= 0:
+    print lyrics.format(number=number_of_green_bottles)
+    number_of_green_bottles = number_of_green_bottles - 1
+
+print "Now my song is finished"
+
+====
+If you have extra time
+3. Write script to ask a user for their email address, and then to confirm it. If they don't give you the same address both times, ask them again. Keep asking them until the addresses match.
