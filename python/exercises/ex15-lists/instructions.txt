@@ -22,9 +22,28 @@ my_numbers_total = sum(my_numbers)
 print "The sum of all the numbers in my list {} is {}".format(my_numbers, my_numbers_total)
 
 print "The third number in my list is {}".format(my_numbers[2])
-print "16 is at index {} in my_numbers"".format(my_number.index(16))
+print "16 is at index {} in my_numbers"".format(my_numbers.index(16))
 
 my_numbers.append("not a number")
 print "Now my numbers list looks like this {}. What will happen if I try to sum it?".format(my_numbers)
 
 sum(my_numbers)
+
+3. Try this:
+my_list = [1, "frog", "penguin", False]
+print "There are {} items in my list".format(len(my_list))
+
+print 1 in my_list
+
+if "frog" in my_list:
+    print "there is a frog in my list"
+
+print "dinosaur" not in my_list
+
+print False in my_list
+
+===
+If you have extra time
+4. Create a list containing some animal names. Use raw_input to ask the user to guess one of the animal names. Use a loop to keep asking them to guess until they get one of them. Swap with someone else to play each others' guessing games.
+
+

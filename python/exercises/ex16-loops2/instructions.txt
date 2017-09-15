@@ -1,0 +1,39 @@
+1. Try this:
+my_list = ["haddock", 7.4, "koala", "Flamingo", 9, True]
+for item in my_list:
+    print "One of the items in my_list is {}".format(item)
+
+
+2. Try this:
+some_numbers = [3, 8, 16.4, 21.8, 4]
+
+print "doubling each number in my list gives:"
+for number in some_numbers:
+    print number * 2
+
+3. Try this:
+print "Now I will count up to 12"
+for i in range(12):
+    print i + 1
+
+print "Now I will add 7 kittens to my list"
+kitten_list = []
+for i in range(7):
+    kitten_list.append("kitten")
+print "How many kitten in the kitten list now? {}".format(len(kitten_list))
+
+4. Try this:
+animals = ["elephant", "piglet", "antelope", "giraffe", "spider"]
+
+choice = False
+for a in animals:
+    choice = raw_input("would you like a {}? [y/n] ".format(item))
+    if choice.lower() in ["yes", "y"]:
+        print "You have chosen a {}! Good choice!".format(a)
+
+if not choice:
+    print "You didn't choose any of our wonderful animals, oh dear!"
+
+====
+If you have extra time
+5. Go back to your zoo. Use lists and loops to improve your questions and reponses to your customers.
