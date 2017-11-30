@@ -1,0 +1,60 @@
+1. Try this:
+def say_hello():
+    print "hello, nice to see you today"
+
+say_hello()
+
+2. Try deleting the last line (say_hello()) and run your script again. What happens?
+
+3. Try this:
+def say_hello_to_someone(name):
+    print "hello {}, nice to see you today".format(name.title())
+
+say_hello_to_someone("kat")
+say_hello_to_someone("ronnie")
+
+4. Try this:
+def say_hello_to_two_people(name1, name2):
+    print "hello {}, nice to see you today".format(name1.title())
+    print "hello {}, it's also nice to see you".format(name2.title())
+
+say_hello_to_two_people("kat", "ronnie")
+say_hello_to_two_people("alfred", "lily")
+
+5. Try this. What do you think will happen?
+say_hello_to_two_people("kat", "ronnie", "alfred')
+say_hello_to_someone()
+
+6. Try this
+def say_hello(name, loudly=False):
+    message = "hello {}".format(name)
+    if loudly:
+        print message.upper()
+    else:
+        print message
+
+say_hello("kat")
+say_hello("ronnie", loudly=True)
+say_hello("alfred", loudly=False)
+say_hello("meghan", True)
+
+7. Try this:
+def do_some_maths(number, number2):
+    print "adding them gives {}".format(number + number2)
+    print "multiplying them gives {}".format(number * number2)
+
+number1 = 12
+number2 = 14
+number3 = -2
+number4 = 10043
+
+do_some_maths(number1, number2)
+do_some_maths(number3, number1)
+do_some_maths(number2, number4)
+
+print number2
+
+
+====
+If you have extra time
+5. Go back to your zoo. Add a function that takes your zoo's name and the name of your visitor and greets them
