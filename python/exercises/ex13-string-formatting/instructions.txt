@@ -17,9 +17,9 @@ I would like my name {my_name:*^15} up in stars
 {another_name} is very swanky and needs lots of $s before his name {another_name:$>24}
 {long_name} has a very long name and we don't need to see the whole thing every time, so we can do {long_name:.6}
 {my_float} can be formatted with the number of decimal places we want like this {my_float:.3f}
-we can pad it with some zeros too if we want, like this: {my_float:07.3f}'''.format("Ronnie", my_name="Kat", another_name="My Swanky", long_name="HRH Queen Elizabeth Alexandra Mary", my_float=3.141592653589793)
+we can pad it with some zeros too if we want, like this: {my_float:07.3f}'''.format("Ronnie", my_name="Kat", another_name="Mr Swanky", long_name="HRH Queen Elizabeth Alexandra Mary", my_float=3.141592653589793)
 
 ====
 If you have extra time
-5. Write a script that will ask the user for their favourite type of weather, their favourite mode of transport and their favourite type of food. Store their answers in variables and use string fomatting with a multi line string to print out a suggested holiday itinary for them.
+5. Write a script that will ask the user for their favourite type of weather, their favourite mode of transport and their favourite type of food. Store their answers in variables and use string formatting with a multi line string to print out a suggested holiday itinary for them.
 
