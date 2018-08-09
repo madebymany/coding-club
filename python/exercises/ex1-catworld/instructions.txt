@@ -1,0 +1,35 @@
+Navigate around the directories under `cat_world` using the commands you've learnt. Open the cat files to learn exciting facts about them!
+
+1. Find Tootsie the Happy Cat. Hint: Tootsie likes the outdoors and eating fish
+    a what is Tootsie's secret wish?
+    b did you like Tootsie's joke? (you might have to Google it, but that always makes things funnier!)
+    c what other files are there in the same directory as Tootsie? 
+    d what is the full path for Tootsie's location?
+
+2. Find Ronnie the Fat Cat. Hint: Ronnie likes a quiet, comfortable life, with lots of snacks.
+    a what is Ronnie's favourite food?
+    b did you like Ronnie's joke?
+    c go up 2 levels from where you found Ronnie using one of the shortcuts arguments to `cd`. What's the full path of the directory you are in?
+
+3. Winnie the Wandering Cat has arrived in Cat world. Winnie likes exploring exciting new places!
+    a find a place you think Winnie would like a create a new directory called winnie-s-cat-basket
+    b create a file inside winnie-s-cat-basket called winnie-the-wandering-cat. Put some interesting facts about Winnie in the file.
+
+4. Find Tom the Space Cat. Hint: Tom enjoys adventure and meeting new people.
+    a what is Tom's favourite passtime?
+    b did you like Tom's joke?
+    c Tom the space cat likes meeting new people. Make another file in the same directory as him called margery_the_space_cat.txt
+    d go up one level from where you found Tom the space cat. What other directories are there?
+
+=====
+
+If you have extra time...
+
+5. Try to find Mildred the Millionaire Cat. Hint: Mildred is very fancy and doesn't care to be bothered by the likes of you!
+    a Hint: If you have trouble finding Mildred, try googling 'hidden files'. Is there a flag you can use to see hidden files?
+    b What car does Mildred drive?
+    c did you enjoy Mildred's joke?
+
+6. Mildred should stop hiding and get out to see the world a bit.
+    a Rename Mildred's file so she's no longer hidden (Hint: you will need to find a new command to do this: try googling for 'rename' or 'move')
+    b Mildred should go to visit Tootsie - she's a very tolerant cat who will know how to cheer Mildred up. Move Mildred to the same place as Tootsie (hint: you wrote down Tootsie's location for question 1c) 
