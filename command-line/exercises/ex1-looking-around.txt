@@ -1,0 +1,23 @@
+1.  Open the Teriminal program on your Mac 🎪
+2.  type 'pwd' (without the quotes) and press enter. 🕯
+    What do you see? 👀
+    Compare it with your neighbours 🏘
+3.  type 'cd Desktop' and press enter 👣
+    Has anything changed on the screen?
+4.  Run 'pwd' again 🕯
+    How is the output different? 👀
+5.  Run 'ls' 🧐
+    What do you see? 👀
+    Compare it with your neighbour's 🏘
+6.  On your desktop, create a new folder. Call it 'coding-club' (without quotes) 🌈
+    Create another folder inside 'coding-club' (using Finder). Call it 'exercises'
+    Create a folder inside 'exercises' call 'ex1-looking-around'
+7.  Back in your Terminal program, run 'cd coding-club/ex1-looking-around'
+    Now run 'pwd' and 'ls'
+8.  Run 'cd ..' and then 'pwd' and 'ls' ⏪
+    What do you see? 👀
+9.  Run 'cd ../../..' and then 'pwd' ⏪
+    What do you see? 👀
+10. Run 'ls -l' and then 'ls -lt' and then 'ls -ltr'
+    How do you see each time? 👀
+    Can you work out l t and r each do? 🧠

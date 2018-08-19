@@ -1,8 +1,0 @@
-Yay, you found Ronnie Cat. Well done!
-Ronnie Cat is very happy to see you. Purr purr purr.
-He is eating some ham, which is his favourite.
-
-Ronnie Cat tells you a very funny programming joke:
-`A guy walks into a bar and asks for 1.014 root beers.
-The bartender says, “I’ll have to charge you extra, that’s a root beer float”.
-So the guy says, “In that case, better make it a double.`

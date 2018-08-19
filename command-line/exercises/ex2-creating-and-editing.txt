@@ -1,0 +1,19 @@
+1.  Open the Teriminal program on your Mac 🎪
+2.  'cd' into your 'coding-club/exercises' folder you created in the previous exercise 👣
+3.  run 'mkdir exercise2' 🗂
+    Now run 'ls' and then 'ls' 👀
+4.  run 'cd exercise 2' and then 'edit my-dinosaur-facts.txt' ✍️
+    TextWrangler should have opened (shout if not!)
+    In TextWrangler, type your favourite dinosaur facts into your file.🦖
+    Save your file and close TextWrangler
+5.  Back in Terminal, run 'cp my-dinosaur-facts.txt kitten-facts.txt' 👥
+    run 'edit kitten-facts.txt' and use TextWrangler to change your facts to refer to kittens. 🐈
+    Back in Terminal, run 'ls'
+6.  Edit a new file called 'sloth-facts.txt' and add some dubious sloth facts to it.
+    Back in Terminal, run 'mv sloth-facts.txt dubious-sloth-facts.txt'
+    run 'ls'
+7.  Run 'mkdir reliable-facts' and then 'mkdir dubious-facts'
+    Run 'mv my-dinosaur-facts reliable-facts/dinosaurs.txt' 🚛
+    Run 'mv kitten-facts reliable-facts/kittens.txt'
+    Run 'mv dubious-sloth-facts.txt dubious-facts/sloths.txt'
+    Use the 'cd' and 'ls' commands to check the contents of your folders

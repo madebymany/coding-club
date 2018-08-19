@@ -1,0 +1,8 @@
+Yay, you found Tom the space cat! Not many people make it out to see Tom because he uses lots of annoying spaces in his files names.
+
+As well as adventuring, Tom's favourite passtime is annoying people with spaces, because he is a very contrary cat.
+
+Tom tells you a very funny programming joke:
+Knock knock.
+Race condition.
+Who's there?
