@@ -12,7 +12,7 @@
 6.  On your desktop, create a new folder. Call it 'coding-club' (without quotes) 🌈
     Create another folder inside 'coding-club' (using Finder). Call it 'exercises'
     Create a folder inside 'exercises' call 'ex1-looking-around'
-7.  Back in your Terminal program, run 'cd coding-club/ex1-looking-around'
+7.  Back in your Terminal program, run 'cd coding-club/exercises/ex1-looking-around'
     Now run 'pwd' and 'ls'
 8.  Run 'cd ..' and then 'pwd' and 'ls' ⏪
     What do you see? 👀
