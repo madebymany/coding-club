@@ -1,0 +1,18 @@
+<h2>Listing Subjects</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for subject <- @subjects do %>
+    <tr>
+      <td><%= link subject.name, to: subject_path(@conn, :show, subject) %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Subject", to: subject_path(@conn, :new) %></span>

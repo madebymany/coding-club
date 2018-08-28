@@ -1,0 +1,12 @@
+1. Create a directory to keep your python club stuff in (remember 'cd' and 'mkdir') 🗂
+2. Open a file called hello.py in your python club directory (remember 'edit')
+2. In TextWrangler, type this into the file:
+
+# This is my first program. Hooray!!
+print "Hello, World!"
+
+3. save the file
+4. Back in Terminal, run this command 'python hello.py'
+5. What did you see? Can you work out how to change your hello.py file to make 'This is the output of my Python program' appear instead?
+
+If you have extra time read about the history of 'Hello, World!" on Wikipedia

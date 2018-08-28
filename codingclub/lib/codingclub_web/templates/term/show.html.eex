@@ -1,0 +1,43 @@
+<h2>Show Term</h2>
+
+<ul>
+
+  <li>
+    <strong>Subject:</strong>
+    <%= @term.subject.name %>
+  </li>
+
+  <li>
+    <strong>Group:</strong>
+    <%= @term.group.name %>
+  </li>
+
+  <li>
+    <strong>Lesson:</strong>
+    <%= @term.lesson.name %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @term.name %>
+  </li>
+
+  <li>
+    <strong>Example:</strong>
+    <%= @term.example %>
+  </li>
+
+  <li>
+    <strong>Expanded:</strong>
+    <%= @term.expanded %>
+  </li>
+
+  <li>
+    <strong>Notes:</strong>
+    <%= @term.notes %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: term_path(@conn, :edit, @term) %></span>
+<span><%= link "Back", to: term_path(@conn, :index) %></span>

@@ -1,0 +1,41 @@
+@import "./variables";
+
+.header {
+  margin-bottom: 3rem;
+  border-bottom: 2px solid $lightest-grey;
+}
+.site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.2rem 0 0;
+  padding-bottom: 1.2rem;
+
+  &__name {
+    a {
+      color: $black;
+    }
+  }
+
+  &__outlet {
+    color: $pinkish-red;
+    word-spacing: 0;
+  }
+
+  &__login {
+  }
+
+  &__login-user {
+    &::after {
+      content: "";
+      display: inline-block;
+      border-radius: 2rem;
+      width: 0.4em;
+      height: 0.4em;
+      vertical-align: middle;
+      background: $black;
+      margin: 0 0.5ex;
+    }
+  }
+}

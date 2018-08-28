@@ -1,0 +1,5 @@
+<h2>Edit Term</h2>
+
+<%= render "form.html", Map.put(assigns, :action, term_path(@conn, :update, @term)) %>
+
+<span><%= link "Back", to: term_path(@conn, :index) %></span>

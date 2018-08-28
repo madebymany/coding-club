@@ -1,0 +1,205 @@
+@import "./variables";
+@import "./mixins";
+@import "./type";
+@import "./wtfforms";
+
+.main form {
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  @include media(">tablet") {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 600px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  label {
+    flex: 1;
+    display: block;
+    font-size: $txt-16;
+    font-weight: $bold;
+    padding-right: 1rem;
+    padding-bottom: 0.8rem;
+
+    @include media(">tablet") {
+      padding-top: 0.6em;
+      display: inline-block;
+      text-align: right;
+    }
+    &.file {
+      text-align: left;
+    }
+  }
+
+  input,
+  textarea,
+  .file,
+  .date-select,
+  .select {
+    flex: 3;
+
+    select {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
+
+  .checkbox-input-wrapper {
+    flex: 3;
+    margin-top: 0.6rem;
+  }
+  .select-row {
+    margin-bottom: 1rem;
+  }
+}
+
+input,
+textarea,
+.file,
+.date-select,
+.select {
+  font-size: $txt-14;
+  margin: 0;
+}
+.file-custom,
+input,
+textarea {
+  padding: 1em 0.5em;
+
+  @include media(">tablet") {
+    padding: 0.8em;
+  }
+}
+
+.file-custom {
+  height: auto;
+
+  &::before {
+    height: auto;
+  }
+}
+
+
+
+textarea,
+input[type="number"],
+input[type="password"],
+input[type="text"] {
+  border: 1px solid $lightest-grey;
+  border-bottom-width: 2px;
+
+  &:focus {
+    border-color: $light-grey;
+  }
+}
+
+.select select {
+  font-size: $txt-14;
+}
+
+textarea,
+input,
+button {
+  outline: none;
+}
+
+.alert {
+  font-size: $txt-18;
+  background: $pinkish-red;
+  color: $white;
+  border-radius: 4px;
+  padding: 0.8rem 1em;
+  margin-bottom: 2rem;
+
+  &-danger {
+  }
+
+  &-info {
+  }
+}
+
+
+input.btn,
+button {
+  @extend .button--primary;
+  padding: 1em 2em;
+  line-height: 1;
+  cursor: pointer;
+
+  .form-group & {
+    margin-left: 160px;
+  }
+}
+
+.help-block {
+  color: $pinkish-red;
+}
+
+.hint-block {
+  color: $light-grey;
+}
+
+.help-block,
+.hint-block {
+  font-size: $txt-14;
+  margin-top: 0.5em;
+}
+
+@include media(">tablet") {
+
+  .hint-block {
+    flex: 1 100%;
+    margin-left: 160px;
+  }
+  .help-block {
+    flex: 1 100%;
+    margin-left: 160px;
+  }
+}
+
+.radio-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.7rem 0 1rem;
+  flex: 3;
+}
+
+.radio-image {
+  margin: 3px;
+  width: 100px;
+
+  & > input {
+    visibility: hidden; // Makes input not-clickable
+    position: absolute; // Remove input from document flow
+    width: 0;
+  }
+  & > input + img {
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+    padding: 1px;
+    padding: 1em;
+    border: 2px solid transparent;
+
+    transition: border 100ms ease;
+  }
+  & > input:checked + img {
+    border-color: $pinkish-red;
+  }
+  & > input:focus + img {
+    border-color: $light-grey;
+  }
+}
+

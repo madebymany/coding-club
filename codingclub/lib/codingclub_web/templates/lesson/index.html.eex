@@ -1,0 +1,19 @@
+<h2>Listing Lessons</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for lesson <- @lessons do %>
+    <tr>
+      <td><%= link lesson.name, to: lesson_path(@conn, :show, lesson) %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Lesson", to: lesson_path(@conn, :new) %></span>

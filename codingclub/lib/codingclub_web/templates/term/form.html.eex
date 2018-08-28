@@ -1,0 +1,59 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, :name, class: "control-label" %>
+    <%= text_input f, :name, class: "form-control" %>
+    <%= error_tag f, :name %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :expanded, class: "control-label" %>
+    <%= text_input f, :expanded, class: "form-control" %>
+    <%= error_tag f, :expanded %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :example, class: "control-label" %>
+    <%= textarea f, :example, class: "form-control" %>
+    <%= error_tag f, :example %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :notes, class: "control-label" %>
+    <%= textarea f, :notes, class: "form-control" %>
+    <%= error_tag f, :notes %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :subject_id, class: "control-label" %>
+    <div class="select">
+      <%= select f, :subject_id, @all_subjects, class: "form-control formats-select" %>
+    </div>
+    <%= error_tag f, :subject_id %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :group_id, class: "control-label" %>
+    <div class="select">
+      <%= select f, :group_id, @all_groups, class: "form-control formats-select" %>
+    </div>
+    <%= error_tag f, :group_id %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :lesson_id, class: "control-label" %>
+    <div class="select">
+      <%= select f, :lesson_id, @all_lessons, class: "form-control formats-select" %>
+    </div>
+    <%= error_tag f, :lesson_id %>
+  </div>
+
+  <div class="form-group">
+    <%= submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>

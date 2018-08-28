@@ -1,0 +1,57 @@
+<h2>Listing Terms</h2>
+
+<div class="admin-header">
+  <%= form_for @conn, term_path(@conn, :index), [method: :get, class: "index-filters"], fn f -> %>
+    <%= label f, :name, "Name", class: "control-label" %>
+    <%= text_input f, :name, class: "form-control" %>
+
+    <%= label f, :subject_id, "Subject", class: "control-label" %>
+    <div class="select">
+      <%= select f, :subject_id, @all_subjects, prompt: "..." %>
+    </div>
+
+    <%= label f, :group, "Group", class: "control-label" %>
+    <div class="select">
+      <%= select f, :group_id, @all_groups, prompt: "..." %>
+    </div>
+
+    <%= label f, :lesson_id, "Lesson", class: "control-label" %>
+    <div class="select">
+      <%= select f, :lesson_id, @all_lessons, prompt: "..." %>
+    </div>
+
+    <%= submit "Filter", class: "btn btn-primary" %>
+  <% end %>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Group</th>
+      <th>
+        <%= sort_link(@conn, :name, @filter_params, &term_path/3, "Name") %>
+      </th>
+      <th>Example</th>
+      <th>
+        <%= sort_link(@conn, :expanded, @filter_params, &term_path/3, "Expanded") %>
+      </th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for term <- @page do %>
+    <tr>
+      <td><%= term.subject.name %></td>
+      <td><%= term.group.name %></td>
+      <td><%= link term.name, to: term_path(@conn, :show, term) %></td>
+      <td><pre><%= term.example %></pre></td>
+      <td><%= term.expanded %></td>
+      <td><%= term.notes %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= pagination_links_with_filters(@conn, @page, &term_path/3, @filter_params) %>
+
+<span><%= link "New Term", to: term_path(@conn, :new), class: "btn-default" %></span>

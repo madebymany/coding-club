@@ -1,0 +1,224 @@
+/* This file is for your main application css. */
+@import "shared/variables";
+@import "shared/type";
+@import "shared/layout";
+@import "shared/nav";
+@import "shared/header";
+@import "shared/forms";
+@import "shared/progress";
+body {
+  color: blue;
+}
+
+body {
+  font-size: $txt-14;
+  color: $dark-grey;
+}
+
+body .override-admin-font-size {
+  font-size: $txt-18;
+}
+
+.header {
+  font-size: $txt-18;
+}
+
+.table {
+  width: 100%;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+
+  .text-right {
+    width: 300px;
+    text-align: right;
+  }
+
+  td {
+    padding: 0.6em 10px;
+    border-bottom: 1px solid #eee;
+    p {
+      margin: 0.5em 0;
+    }
+  }
+
+  tr.new .title {
+    color: $pinkish-red;
+  }
+
+  tr.unpublished {
+    color: $light-grey;
+  }
+
+  .limit-width {
+    max-width: 400px;
+  }
+
+  .title {
+    font-weight: $bold;
+  }
+
+  .icon {
+    width: auto;
+    width: 1%;
+    white-space: nowrap;
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+}
+th {
+  text-align: left;
+  padding: 0.6em 10px;
+}
+thead tr th {
+  border-bottom: 2px solid $lightest-grey;
+}
+.verdict {
+  font-size: $txt-26;
+  text-align: center;
+  display: block;
+}
+
+.verdict--inline {
+  font-size: $txt-26;
+  vertical-align: middle;
+  padding-left: 1ex;
+}
+
+a.btn {
+  padding: 0.5em 1em 0.3em;
+  margin: 0 0;
+  font-size: $txt-12;
+  min-width: auto;
+  text-transform: uppercase;
+
+  &-default {
+    @extend .button--primary;
+  }
+
+  &-secondary {
+    @extend .button--primary;
+    background: $slate-grey;
+  }
+
+  &-danger {
+    @extend .button--secondary;
+  }
+
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+
+  span {
+    .btn {
+      border-radius: 0;
+      margin-right: 1px;
+    }
+    &:first-child {
+      .btn {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        padding-left: 1.5em;
+      }
+    }
+    &:last-child {
+      .btn {
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        margin-left: 1px;
+        margin-right: 0;
+        padding-right: 1.5em;
+      }
+    }
+  }
+
+}
+
+.admin-panel {
+  border: 5px solid transparentize($blue, 0.8);
+}
+
+code {
+  color: darken($pinkish-red, 5);
+  background: lighten($lightest-grey, 3);
+  border: $lightest-grey 1px solid;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 0.4em;
+}
+.admin-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid $lightest-grey;
+  margin-bottom: 2rem;
+
+  h2 {
+    padding-right: 20px;
+  }
+  .button {
+    margin: 0;
+    margin-left: 2em;
+  }
+  .control-label {
+    margin-left: 2rem;
+    margin-right: 1em;
+  }
+}
+.main .index-filters {
+  margin: 0;
+}
+.index-filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.formats-select {
+  flex: 3;
+  margin-top: 10px;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    padding: 0.3em 1em;
+    margin: 0 2px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+
+    a {
+      display: inline-block;
+      margin: -0.3em -1em;
+      padding: 0.3em 1em;
+      border-radius: 20px;
+      transition: background 100ms ease, color 100ms ease;
+
+      &:hover {
+        background: $pinkish-red;
+        color: $white;
+      }
+    }
+    &.active {
+      border-color: $slate-grey;
+      a {
+        background: $slate-grey;
+        color: $white;
+      }
+    }
+  }
+}
+p.lg {
+  font-size: 20px;
+}

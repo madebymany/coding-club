@@ -1,0 +1,19 @@
+<h2>Listing Groups</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for group <- @groups do %>
+    <tr>
+      <td><%= link group.name, to: group_path(@conn, :show, group) %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Term", to: term_path(@conn, :new) %></span>

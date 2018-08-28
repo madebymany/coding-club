@@ -1,0 +1,30 @@
+.progress {
+  height: 10px;
+  width: 100%;
+  background: #eee;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 300ms ease, opacity 300ms ease;
+}
+.progress__bar {
+  height: 100%;
+  position: absolute;
+  background: $pinkish-red;
+  width: 100%;
+  transform: translateX(-100%);
+  transform-origin: 0 0;
+  border-radius: 10px;
+
+  &.chuncked {
+    transition: transform 12ms linear;
+  }
+}
+
+.progress__complete {
+  background: $pinkish-red;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  color: $white;
+}
