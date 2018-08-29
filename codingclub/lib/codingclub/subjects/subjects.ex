@@ -19,6 +19,10 @@ defmodule Codingclub.Subjects do
 
   def get_subject!(id), do: Repo.get!(Subject, id)
 
+  def get_subject(attrs \\ %{}) do
+    Repo.get_by(Subject, attrs)
+  end
+
   def create_subject(attrs \\ %{}) do
     %Subject{}
     |> Subject.changeset(attrs)
@@ -26,9 +30,18 @@ defmodule Codingclub.Subjects do
   end
 
   def create_subject!(attrs \\ %{}) do
+    IO.puts "create_subject"
     %Subject{}
     |> Subject.changeset(attrs)
     |> Repo.insert!()
+  end
+
+  def get_or_create_subject!(attrs \\ {}) do
+    if subject = get_subject(attrs) do
+      subject
+    else
+      create_subject!(attrs)
+    end
   end
 
   def update_subject(%Subject{} = subject, attrs) do

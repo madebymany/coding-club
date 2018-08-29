@@ -19,6 +19,10 @@ defmodule Codingclub.Lessons do
 
   def get_lesson!(id), do: Repo.get!(Lesson, id)
 
+  def get_lesson(attrs \\ %{}) do
+    Repo.get_by(Lesson, attrs)
+  end
+
   def create_lesson(attrs \\ %{}) do
     %Lesson{}
     |> Lesson.changeset(attrs)
@@ -29,6 +33,14 @@ defmodule Codingclub.Lessons do
     %Lesson{}
     |> Lesson.changeset(attrs)
     |> Repo.insert!()
+  end
+
+  def get_or_create_lesson!(attrs \\ {}) do
+    if lesson = get_lesson(attrs) do
+      lesson
+    else
+      create_lesson!(attrs)
+    end
   end
 
   def update_lesson(%Lesson{} = lesson, attrs) do

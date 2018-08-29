@@ -19,6 +19,10 @@ defmodule Codingclub.Groups do
 
   def get_group!(id), do: Repo.get!(Group, id)
 
+  def get_group(attrs \\ %{}) do
+    Repo.get_by(Group, attrs)
+  end
+
   def create_group(attrs \\ %{}) do
     %Group{}
     |> Group.changeset(attrs)
@@ -26,9 +30,18 @@ defmodule Codingclub.Groups do
   end
 
   def create_group!(attrs \\ %{}) do
+    IO.puts "create_group!"
     %Group{}
     |> Group.changeset(attrs)
     |> Repo.insert!()
+  end
+
+  def get_or_create_group!(attrs \\ {}) do
+    if group = get_group(attrs) do
+      group
+    else
+      create_group!(attrs)
+    end
   end
 
   def update_group(%Group{} = group, attrs) do

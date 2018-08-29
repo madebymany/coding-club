@@ -33,6 +33,10 @@ defmodule Codingclub.Terms do
     |> preload([:lesson, :group, :subject])
   end
 
+  def get_term(attrs \\ %{}) do
+    Repo.get_by(Term, attrs)
+  end
+
   def create_term(attrs \\ %{}) do
     %Term{}
     |> Term.changeset(attrs)
@@ -43,6 +47,14 @@ defmodule Codingclub.Terms do
     %Term{}
     |> Term.changeset(attrs)
     |> Repo.insert!()
+  end
+
+  def get_or_create_term!(attrs \\ {}) do
+    if term = get_term(attrs) do
+      term
+    else
+      create_term!(attrs)
+    end
   end
 
   def update_term(%Term{} = term, attrs) do
