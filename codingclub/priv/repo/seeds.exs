@@ -90,3 +90,70 @@ Terms.get_or_create_term!(%{
   lesson_id: cl_intro.id,
   subject_id: cl_sub.id
 })
+
+Terms.get_or_create_term!(%{
+  name: "Unix",
+  notes: "a family of operating systems that includes MacOS. Terminal comes with a Unix shell, Bash",
+  group_id: cl_concepts.id,
+  lesson_id: cl_intro.id,
+  subject_id: cl_sub.id
+})
+
+Terms.get_or_create_term!(%{
+  name: "Shell",
+  notes: "A shell is a program that lets you type commands. Terminal comes with a Unix shell, Bash",
+  group_id: cl_concepts.id,
+  lesson_id: cl_intro.id,
+  subject_id: cl_sub.id
+})
+
+Terms.get_or_create_term!(%{
+  name: "Bash",
+  notes: "The default unix shell in Terminal. Bash is also the name of the programming language that you can run in the shell.",
+  expanded: "Bourne Again SHell",
+  group_id: cl_concepts.id,
+  lesson_id: cl_intro.id,
+  subject_id: cl_sub.id
+})
+
+Terms.get_or_create_term!(%{
+  name: "Prompt",
+  notes: "The text displayed in a shell at the start of each line. It is customisable and can include information about your computer.",
+  example: "Katherines-MacBook-Pro:exercises kat$",
+  group_id: cl_concepts.id,
+  lesson_id: cl_intro.id,
+  subject_id: cl_sub.id
+})
+
+Terms.get_or_create_term!(%{
+  name: "Prompt",
+  notes: "The text displayed in a shell at the start of each line. It is customisable and can include information about your computer.",
+  example: "Katherines-MacBook-Pro:exercises kat$",
+  group_id: cl_concepts.id,
+  lesson_id: cl_intro.id,
+  subject_id: cl_sub.id
+})
+
+Terms.get_or_create_term!(%{
+  name: "Command",
+  notes: "A program you can run in Bash by typing its name and pressing enter. Some commands take arguments and flags",
+  example: """
+  $ ls -l cat_literature/novellas
+  drwxr-xr-x  1632 kat  staff   52224 28 Nov  2017 archives
+  -rw-r--r--     1 kat  staff     343 24 Mar  2017 Animated Kitty Adventures.pdf
+  -rw-r--r--     1 kat  staff     239 14 Sep  2017 cat_and_mat.txt
+  -rw-r--r--@    1 kat  staff       5 17 Aug 18:55 cat_goes_to_the_seaside.txt
+  -rw-r--r--     1 kat  staff     730 24 Mar  2017 cats_in_hats.txt
+  """,
+  group_id: cl_concepts.id,
+  lesson_id: cl_intro.id,
+  subject_id: cl_sub.id
+})
+
+Terms.get_or_create_term!(%{
+  name: "Argument",
+  notes: "A program you can run in Bash by typing its name and pressing enter. Some commands take arguments and flags",
+  group_id: cl_concepts.id,
+  lesson_id: cl_intro.id,
+  subject_id: cl_sub.id
+})

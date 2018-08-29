@@ -142,8 +142,8 @@ a.btn {
 }
 
 code {
-  color: darken($pinkish-red, 5);
-  background: lighten($lightest-grey, 3);
+  color: $dark-green;
+  background: $lightest-grey;
   border: $lightest-grey 1px solid;
   padding: 0.5em 1em;
   border-radius: 5px;
@@ -221,4 +221,9 @@ code {
 }
 p.lg {
   font-size: 20px;
+}
+
+.code-column {
+  overflow: scroll;
+  max-width: 400px;
 }

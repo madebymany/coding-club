@@ -26,12 +26,11 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Subject</th>
       <th>Group</th>
       <th>
         <%= sort_link(@conn, :name, @filter_params, &term_path/3, "Name") %>
       </th>
-      <th>Example</th>
+      <th class="code-column">Example</th>
       <th>
         <%= sort_link(@conn, :expanded, @filter_params, &term_path/3, "Expanded") %>
       </th>
@@ -41,10 +40,15 @@
   <tbody>
 <%= for term <- @page do %>
     <tr>
-      <td><%= term.subject.name %></td>
-      <td><%= term.group.name %></td>
+      <td><%= "#{term.subject.name} - #{term.group.name}" %></td>
       <td><%= link term.name, to: term_path(@conn, :show, term) %></td>
-      <td><pre><%= term.example %></pre></td>
+      <%= if term.example do %>
+        <td class="code-column">
+          <pre><code><%= term.example %></code></pre>
+        </td>
+      <% else %>
+        <td></td>
+      <% end %>
       <td><%= term.expanded %></td>
       <td><%= term.notes %></td>
     </tr>
