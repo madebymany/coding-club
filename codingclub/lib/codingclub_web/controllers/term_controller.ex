@@ -5,7 +5,7 @@ defmodule CodingclubWeb.TermController do
   alias Codingclub.Terms.Schemas.Term
   alias Codingclub.{Lessons, Groups, Subjects}
 
-  @filters [:name, :group_id, :lesson_id]
+  @filters [:name, :group_id, :lesson_id, :subject_id]
   @orderables [:name, :expanded]
 
   defp all_lessons(), do: Lessons.all_lessons()
