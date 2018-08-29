@@ -1,5 +1,18 @@
 use Mix.Config
 
+config :codingclub, CodingclubWeb.Endpoint,
+  load_from_system_env: true,
+  secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE"),
+  url: [host: System.get_env("URL"), port: 443]
+
+# Configure your database
+config :codingclub, Codingclub.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  # Override at runtime in repo.ex
+  url: System.get_env("DATABASE_URL"),
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+  ssl: true
+  
 # For production, we often load configuration from external
 # sources, such as your system environment. For this reason,
 # you won't find the :http configuration below, but set inside
@@ -61,4 +74,4 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-import_config "prod.secret.exs"
+# import_config "prod.secret.exs"

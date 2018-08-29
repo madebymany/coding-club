@@ -12,7 +12,7 @@ config :codingclub,
 # Configures the endpoint
 config :codingclub, CodingclubWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "LpgcB53Squ5p9zdtGwQLuBw3sjnHjVPVe3bxeeVeRZOIIOT9wFKssC9FFwK9IV7n",
+  secret_key_base: "LpgcB53Squ5p9zdtGwQLuBw3sjnHjVPVe3bxeeVeRZOIIOT9wFKssC9FFwK9IV7n", # This is used in dev and test environments 
   render_errors: [view: CodingclubWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Codingclub.PubSub,
            adapter: Phoenix.PubSub.PG2]
