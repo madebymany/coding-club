@@ -33,7 +33,7 @@ py_strings = Lessons.get_or_create_lesson!(%{name: "Strings and Printing"})
 Terms.get_or_create_term!(%{
   name: "cd",
   expanded: "Change Directory",
-  example: "cd Documents/my_directory",
+  example: "$ cd Documents/my_directory",
   group_id: commands.id,
   lesson_id: cl_intro.id,
   subject_id: cl.id
@@ -42,7 +42,7 @@ Terms.get_or_create_term!(%{
 Terms.get_or_create_term!(%{
   name: "ls",
   expanded: "LiSt",
-  example: "ls",
+  example: "$ ls",
   group_id: commands.id,
   lesson_id: cl_intro.id,
   subject_id: cl.id
@@ -51,7 +51,7 @@ Terms.get_or_create_term!(%{
 Terms.get_or_create_term!(%{
   name: "pwd",
   expanded: "Print Working Directory",
-  example: "pwd",
+  example: "$ pwd",
   group_id: commands.id,
   lesson_id: cl_intro.id,
   subject_id: cl.id
@@ -60,7 +60,7 @@ Terms.get_or_create_term!(%{
 Terms.get_or_create_term!(%{
   name: "mv",
   expanded: "MoVe",
-  example: "mv myfile.txt new_name.txt",
+  example: "$ mv myfile.txt new_name.txt",
   group_id: commands.id,
   lesson_id: cl_intro.id,
   subject_id: cl.id
@@ -69,7 +69,7 @@ Terms.get_or_create_term!(%{
 Terms.get_or_create_term!(%{
   name: "cp",
   expanded: "CoPy",
-  example: "cp myfile.txt my_new_copy.txt",
+  example: "$ cp myfile.txt my_new_copy.txt",
   group_id: commands.id,
   lesson_id: cl_intro.id,
   subject_id: cl.id
@@ -78,7 +78,7 @@ Terms.get_or_create_term!(%{
 Terms.get_or_create_term!(%{
   name: "mkdir",
   expanded: "MaKe DIRectory",
-  example: "mkdir my_new_directory",
+  example: "$ mkdir my_new_directory",
   group_id: commands.id,
   lesson_id: cl_intro.id,
   subject_id: cl.id
@@ -86,7 +86,7 @@ Terms.get_or_create_term!(%{
 
 Terms.get_or_create_term!(%{
   name: "edit",
-  example: "edit a-thought-i-just-had-about-rabbits.txt",
+  example: "$ edit a-thought-i-just-had-about-rabbits.txt",
   notes: "The edit command opens TextWrangler if you have installed the command line tools. It will open a file you give as an argument (it will create if it doesn't exist)",
   group_id: commands.id,
   lesson_id: cl_intro.id,
