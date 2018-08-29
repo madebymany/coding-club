@@ -3,8 +3,20 @@ defmodule CodingclubWeb.TermControllerTest do
 
   alias Codingclub.Terms
 
-  @create_attrs %{category: "some category", example: "some example", expanded: "some expanded", name: "some name", notes: "some notes"}
-  @update_attrs %{category: "some updated category", example: "some updated example", expanded: "some updated expanded", name: "some updated name", notes: "some updated notes"}
+  @create_attrs %{
+    category: "some category",
+    example: "some example",
+    expanded: "some expanded",
+    name: "some name",
+    notes: "some notes"
+  }
+  @update_attrs %{
+    category: "some updated category",
+    example: "some updated example",
+    expanded: "some updated expanded",
+    name: "some updated name",
+    notes: "some updated notes"
+  }
   @invalid_attrs %{category: nil, example: nil, expanded: nil, name: nil, notes: nil}
 
   def fixture(:term) do
@@ -56,7 +68,7 @@ defmodule CodingclubWeb.TermControllerTest do
     setup [:create_term]
 
     test "redirects when data is valid", %{conn: conn, term: term} do
-      conn = put conn, term_path(conn, :update, term), term: @update_attrs
+      conn = put(conn, term_path(conn, :update, term), term: @update_attrs)
       assert redirected_to(conn) == term_path(conn, :show, term)
 
       conn = get conn, term_path(conn, :show, term)
@@ -64,7 +76,7 @@ defmodule CodingclubWeb.TermControllerTest do
     end
 
     test "renders errors when data is invalid", %{conn: conn, term: term} do
-      conn = put conn, term_path(conn, :update, term), term: @invalid_attrs
+      conn = put(conn, term_path(conn, :update, term), term: @invalid_attrs)
       assert html_response(conn, 200) =~ "Edit Term"
     end
   end
@@ -75,9 +87,10 @@ defmodule CodingclubWeb.TermControllerTest do
     test "deletes chosen term", %{conn: conn, term: term} do
       conn = delete conn, term_path(conn, :delete, term)
       assert redirected_to(conn) == term_path(conn, :index)
-      assert_error_sent 404, fn ->
+
+      assert_error_sent(404, fn ->
         get conn, term_path(conn, :show, term)
-      end
+      end)
     end
   end
 

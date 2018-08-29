@@ -6,16 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :codingclub,
-  ecto_repos: [Codingclub.Repo]
+config :codingclub, ecto_repos: [Codingclub.Repo]
 
 # Configures the endpoint
 config :codingclub, CodingclubWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "LpgcB53Squ5p9zdtGwQLuBw3sjnHjVPVe3bxeeVeRZOIIOT9wFKssC9FFwK9IV7n", # This is used in dev and test environments 
+  # This is used in dev and test environments 
+  secret_key_base: "LpgcB53Squ5p9zdtGwQLuBw3sjnHjVPVe3bxeeVeRZOIIOT9wFKssC9FFwK9IV7n",
   render_errors: [view: CodingclubWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Codingclub.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Codingclub.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -28,4 +27,4 @@ config :scrivener_html,
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"

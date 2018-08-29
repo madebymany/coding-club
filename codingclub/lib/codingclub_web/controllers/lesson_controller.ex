@@ -20,6 +20,7 @@ defmodule CodingclubWeb.LessonController do
         conn
         |> put_flash(:info, "Lesson created successfully.")
         |> redirect(to: lesson_path(conn, :index))
+
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "new.html", changeset: changeset)
     end
@@ -44,6 +45,7 @@ defmodule CodingclubWeb.LessonController do
         conn
         |> put_flash(:info, "Lesson updated successfully.")
         |> redirect(to: lesson_path(conn, :show, lesson))
+
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "edit.html", lesson: lesson, changeset: changeset)
     end

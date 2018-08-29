@@ -2,7 +2,6 @@ defmodule Codingclub.Lessons.Schemas.Lesson do
   use Ecto.Schema
   import Ecto.Changeset
 
-
   schema "lessons" do
     field :name, :string
 

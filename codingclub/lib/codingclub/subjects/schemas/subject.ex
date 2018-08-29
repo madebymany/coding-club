@@ -2,7 +2,6 @@ defmodule Codingclub.Subjects.Schemas.Subject do
   use Ecto.Schema
   import Ecto.Changeset
 
-
   schema "subjects" do
     field :name, :string
 

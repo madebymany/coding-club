@@ -14,6 +14,7 @@ defmodule CodingclubWeb.TermController do
 
   def index(conn, params) do
     {page, filter_params} = Terms.list_terms_filtered(params, @filters, @orderables)
+
     render(
       conn,
       "index.html",
@@ -27,6 +28,7 @@ defmodule CodingclubWeb.TermController do
 
   def new(conn, _params) do
     changeset = Terms.change_term(%Term{})
+
     render(
       conn,
       "new.html",
@@ -43,6 +45,7 @@ defmodule CodingclubWeb.TermController do
         conn
         |> put_flash(:info, "Term created successfully.")
         |> redirect(to: term_path(conn, :index))
+
       {:error, %Ecto.Changeset{} = changeset} ->
         render(
           conn,
@@ -63,6 +66,7 @@ defmodule CodingclubWeb.TermController do
   def edit(conn, %{"id" => id}) do
     term = Terms.get_term!(id)
     changeset = Terms.change_term(term)
+
     render(
       conn,
       "edit.html",
@@ -82,6 +86,7 @@ defmodule CodingclubWeb.TermController do
         conn
         |> put_flash(:info, "Term updated successfully.")
         |> redirect(to: term_path(conn, :index))
+
       {:error, %Ecto.Changeset{} = changeset} ->
         render(
           conn,

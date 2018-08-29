@@ -20,6 +20,7 @@ defmodule CodingclubWeb.SubjectController do
         conn
         |> put_flash(:info, "Subject created successfully.")
         |> redirect(to: subject_path(conn, :index))
+
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "new.html", changeset: changeset)
     end
@@ -44,6 +45,7 @@ defmodule CodingclubWeb.SubjectController do
         conn
         |> put_flash(:info, "Subject updated successfully.")
         |> redirect(to: subject_path(conn, :show, subject))
+
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "edit.html", subject: subject, changeset: changeset)
     end

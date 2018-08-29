@@ -5,22 +5,19 @@ defmodule Codingclub.QueryFilter do
   import Ecto.Query
 
   def filter(query, struct, params, filters, orderables \\ [:inserted_at]) do
-    IO.inspect params
-    params = make_atoms(params) |> IO.inspect
-    fields_to_filter_by = flatten_filter_fields(filters) |> IO.inspect
-    casted_params = cast_filter_params(struct, params, fields_to_filter_by) |> IO.inspect
+    params = make_atoms(params)
+    fields_to_filter_by = flatten_filter_fields(filters)
+    casted_params = cast_filter_params(struct, params, fields_to_filter_by)
 
     query =
       query
       |> make_where_clauses(casted_params, filters)
       |> get_order_by_query(params, orderables)
-      |> IO.inspect
 
     filter_params =
       casted_params
       |> add_page_param(params)
       |> add_order_by_params(params, orderables)
-      |> IO.inspect
 
     {query, filter_params}
   end
@@ -33,7 +30,6 @@ defmodule Codingclub.QueryFilter do
     # should be removed from the where clause.
     struct
     |> Ecto.Changeset.cast(params, fields_to_filter_by, empty_values: [nil])
-    |> IO.inspect
     |> Map.fetch!(:changes)
     |> Map.to_list()
     |> Enum.reject(&has_empty_value?(&1))

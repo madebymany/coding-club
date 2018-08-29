@@ -16,9 +16,7 @@ defmodule Codingclub.Terms do
   end
 
   def list_terms_filtered(params, filters, orderables) do
-    IO.puts "list_terms_filtered"
-    {query, where_clauses} =
-      QueryFilter.filter(Term, %Term{}, params, filters, orderables)
+    {query, where_clauses} = QueryFilter.filter(Term, %Term{}, params, filters, orderables)
 
     page =
       query

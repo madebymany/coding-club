@@ -14,7 +14,8 @@ defmodule CodingclubWeb.Router do
   end
 
   scope "/", CodingclubWeb do
-    pipe_through :browser # Use the default browser stack
+    # Use the default browser stack
+    pipe_through :browser
 
     get "/", PageController, :index
     resources "/terms", TermController

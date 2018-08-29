@@ -28,8 +28,9 @@ defmodule CodingclubWeb do
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/codingclub_web/templates",
-                        namespace: CodingclubWeb
+      use Phoenix.View,
+        root: "lib/codingclub_web/templates",
+        namespace: CodingclubWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]

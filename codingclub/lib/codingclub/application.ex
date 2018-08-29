@@ -11,7 +11,7 @@ defmodule Codingclub.Application do
       # Start the Ecto repository
       supervisor(Codingclub.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(CodingclubWeb.Endpoint, []),
+      supervisor(CodingclubWeb.Endpoint, [])
       # Start your own worker by calling: Codingclub.Worker.start_link(arg1, arg2, arg3)
       # worker(Codingclub.Worker, [arg1, arg2, arg3]),
     ]

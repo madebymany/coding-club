@@ -30,7 +30,6 @@ defmodule Codingclub.Subjects do
   end
 
   def create_subject!(attrs \\ %{}) do
-    IO.puts "create_subject"
     %Subject{}
     |> Subject.changeset(attrs)
     |> Repo.insert!()

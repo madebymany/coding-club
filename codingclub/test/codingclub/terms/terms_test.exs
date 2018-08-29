@@ -6,8 +6,20 @@ defmodule Codingclub.TermsTest do
   describe "terms" do
     alias Codingclub.Terms.Term
 
-    @valid_attrs %{category: "some category", example: "some example", expanded: "some expanded", name: "some name", notes: "some notes"}
-    @update_attrs %{category: "some updated category", example: "some updated example", expanded: "some updated expanded", name: "some updated name", notes: "some updated notes"}
+    @valid_attrs %{
+      category: "some category",
+      example: "some example",
+      expanded: "some expanded",
+      name: "some name",
+      notes: "some notes"
+    }
+    @update_attrs %{
+      category: "some updated category",
+      example: "some updated example",
+      expanded: "some updated expanded",
+      name: "some updated name",
+      notes: "some updated notes"
+    }
     @invalid_attrs %{category: nil, example: nil, expanded: nil, name: nil, notes: nil}
 
     def term_fixture(attrs \\ %{}) do

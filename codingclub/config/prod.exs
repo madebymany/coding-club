@@ -12,7 +12,7 @@ config :codingclub, Codingclub.Repo,
   url: System.get_env("DATABASE_URL"),
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true
-  
+
 # For production, we often load configuration from external
 # sources, such as your system environment. For this reason,
 # you won't find the :http configuration below, but set inside

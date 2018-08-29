@@ -30,7 +30,6 @@ defmodule Codingclub.Groups do
   end
 
   def create_group!(attrs \\ %{}) do
-    IO.puts "create_group!"
     %Group{}
     |> Group.changeset(attrs)
     |> Repo.insert!()
