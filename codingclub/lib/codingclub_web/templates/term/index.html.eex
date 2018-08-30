@@ -35,6 +35,7 @@
         <%= sort_link(@conn, :expanded, @filter_params, &term_path/3, "Expanded") %>
       </th>
       <th>Notes</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -51,6 +52,11 @@
       <% end %>
       <td><%= term.expanded %></td>
       <td><%= term.notes %></td>
+      <td class="text-right">
+        <div class="btn-group">
+          <span><%= link "Edit", to: term_path(@conn, :edit, term), class: "btn btn-default btn-xs" %></span>
+        </span>
+      </td>
     </tr>
 <% end %>
   </tbody>
