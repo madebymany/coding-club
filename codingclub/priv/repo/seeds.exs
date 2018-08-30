@@ -221,3 +221,30 @@ Terms.get_or_create_term!(%{
   lesson_id: py_first_steps.id,
   subject_id: py.id
 })
+
+Terms.get_or_create_term!(%{
+  name: "function",
+  example: "print(\"Hello, world!\")",
+  notes: "A piece of code that can be run multiple times to make something happen. A function can take arguments. In Python, we use ()s to call a function and if a function takes arguments, we put the arguments inside the ()s.",
+  group_id: concepts.id,
+  lesson_id: py_strings.id,
+  subject_id: py.id
+})
+
+Terms.get_or_create_term!(%{
+  name: "string",
+  example: "Hello, world!",
+  notes: "A sequence of characters. In python we surround strings with single or double quotes.",
+  group_id: concepts.id,
+  lesson_id: py_strings.id,
+  subject_id: py.id
+})
+
+Terms.get_or_create_term!(%{
+  name: "print",
+  example: "print(\"Hello, world!\")",
+  notes: "takes a string as its argument, and outputs the string onto the screen when we run the code",
+  group_id: functions.id,
+  lesson_id: py_strings.id,
+  subject_id: py.id
+})
