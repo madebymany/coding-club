@@ -28,7 +28,7 @@ defmodule Codingclub.Terms do
 
   def get_term!(id) do
     Repo.get!(Term, id)
-    |> preload([:lesson, :group, :subject])
+    |> Repo.preload([:lesson, :group, :subject])
   end
 
   def get_term(attrs \\ %{}) do

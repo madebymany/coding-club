@@ -82,7 +82,7 @@ defmodule CodingclubWeb.TermController do
     term = Terms.get_term!(id)
 
     case Terms.update_term(term, term_params) do
-      {:ok, term} ->
+      {:ok, _term} ->
         conn
         |> put_flash(:info, "Term updated successfully.")
         |> redirect(to: term_path(conn, :index))
