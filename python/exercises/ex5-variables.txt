@@ -1,0 +1,30 @@
+1. Type this into a python file and run it
+# I'm going to store something in a variable
+a = "Hello, world!"
+# yay, I made my first variable, now I can print it out
+print(a)
+
+2. Let's store an integer in a variable. Add this to your python file and run it
+my_integer = 123
+print(my_integer)
+
+3. Try assigning to the same variable more than once. What do you think will happen? Try it
+my_variable = "Cats have nice paws"
+print(my_variable)
+my_variable = 2.71828
+print(my_variable)
+
+4. We can do maths with numbers stored inside variables. Try this:
+a = 4
+b = 7.2
+print(a * b)
+c = b - a
+print(c)
+
+5. We can use one variable to create another variable. Try This:
+a = 4
+b = a + 2
+print(a)
+print(b)
+a = 20
+print(b)

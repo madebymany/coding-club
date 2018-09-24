@@ -1,0 +1,13 @@
+1. In a python file, write out and run the following:
+print("if I have a bucket that holds 1.2 litres of goo and I fill it 2 and a half times, I will have", 1.2 * 2.5, "litres of goo")
+print("If I divide up the goo and post it to 3 of my closest friends, they will each receive", (1.2 * 2.5)/3, "litres of goo")
+
+2. In your python file, print out the results of these calculations:
+2.01 + 3.99
+2 ** 3.0
+4 ** 0.5
+16.7 - 3.7
+8 + 8.0
+0.1 + 0.2
+
+3. In your terminal window, open up an interative python session by running `python` with no argument. Type in 0.1 + 0.2
